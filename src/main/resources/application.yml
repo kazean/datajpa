@@ -13,6 +13,12 @@ spring:
 #        show_sql: true
         format_sql: true
 #        default_batch_fetch_size: 100
+  data:
+    web:
+      pageable:
+        default-page-size: 3
+        max-page-size: 20
+#        one-indexed-parameters: true
 
   logging.level:
     org.hibernate.SQL: debug
